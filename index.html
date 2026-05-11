@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>李佳仪的个人主页</title>
+    <title>我的高清视频主页</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background-color: #f4f4f4; padding: 50px; }
-        h1 { color: #333; }
-        .box { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        body { font-family: sans-serif; text-align: center; background-color: #1a1a1a; color: white; padding: 20px; }
+        .container { max-width: 800px; margin: auto; background: #333; padding: 15px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        video { width: 100%; border-radius: 10px; outline: none; }
+        h1 { font-size: 1.5rem; margin-bottom: 20px; color: #00d2ff; }
     </style>
 </head>
 <body>
-    <div class="box">
+    <div class="container">
         <h1>你好，我是李佳仪</h1>
-        <p>这是我用 GitHub 做的第一个网页！</p>
-        <button onclick="alert('点得好！')">点我一下</button>
+        <p>这是我存储在云端的原画质视频：</p>
+        
+        <video controls playsinline>
+            <source src="https://drive.google.com/uc?export=download&id=1UHkjmjKMwlbdVQFz4IxaiUF4fy6eah1E" type="video/mp4">
+            您的浏览器不支持 HTML5 视频播放。
+        </video>
+
+        <p style="margin-top: 20px; font-size: 0.8rem; color: #888;">视频由 Google Drive 提供加速</p>
     </div>
 </body>
 </html>
